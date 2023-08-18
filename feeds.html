@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="{% static 'feed.css' %}"/>
+<script type="text/javascript" src="{% static 'feed/feed.js' %}"></script>
+<h1 class="c_title feed__title">Feed</h1>
+<div id="id_top-actions-section" class="c_row__display center">
+    <a href="{% url "tickets" %}">
+    <button class="c_button">Request a review</button></a>
+    <a href="{% url "tickets_reviews" %}">
+    <button class="c_button">Create a review</button></a>
+</div>
+<div class="c_center global__width">
+
+    <div class="c_ticket__post not__reviewed">
+        <div class="c_ticket__post already__reviewed">
+            <div class="c_ticket__post__content">
+                <div class="c_ticket__post__content__row">
+                    <p>You have requested a review</p>
+                    <p>{{ post.user.username }} has requested a review</p>
+                    <p>{{ post.time_created | date:'H:i, d F Y' }}</p>
+                </div>
+                <p>Title: {{ post.title }}</p>
+                <div class="c_ticket__post__content__row">
+                    <img src="{{ post.image.url }}" class="c_ticket__image">
+                    <p></p>
+                    <a href="{% url "tickets_from_reviews" post.id%}">
+                    <button class="c_button">Create a review</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c_review__post">
+        <div class="c_review__post__content">
+            <div class="c_review__post__content__row">
+                <p>You have published a review</p>
+                <p>{{ post.user.username }} has published a review</p>
+                <p>{{ post.time_created | date:'H:i, d F Y' }}</p>
+            </div>
+            <div class="c_review__rating">
+                <p>{{ post.headline }} -</p>
+                <p class="c_rating__off">{{ rating_char_off }}</p>
+                <p class="c_rating__on">{{ rating_char_on }}</p>
+            </div>
+            <p>Comment: {{ post.body }}</p>
+            <div class="c_ticket__in__review">
+                <div class="c_ticket__post__content">
+<p>Ticket - You</p>
+                    <p>Ticket: {{ post.ticket.user }}</p>
+
+                    <img src="{{ post.ticket.image.url }}"
+                         class="c_ticket__image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="{% static 'subs.css' %}"/>
+<h1 class="c_title ">Subscriptions</h1>
+<div class="c_center global__width">
+    <div class="c_subscriptions__item">
+        <p>Follow other users</p>
+        <form method="POST" enctype="multipart/form-data">
+            <button type="submit" class="c_button">Send</button>
+        </form>
+        <p class="c_error__message">{{ error_message }}</p>
+        <p class="validation__message">{{ validation_message }}</p>
+        <p></p>
+    </div>
+    <div class="c_subscriptions__item">
+        <p>Subscriptions</p>
+        <p class="c_error__message">You are not subscribed to any user.</p>
+        <table class="c_subscriptions__table">
+            <tr>
+                <td>{{ subscription.followed_user.username }}</td>
+                <td>
+                    <a href="{% url "delete_subscriptions" subscription.followed_user.id %}">Unfollow</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="c_subscriptions__item">
+        <p>Subscribers</p>
+        <p class="c_error__message">You don't have any subscribers yet.</p>
+        <table class="c_subscriptions__table">
+            <tr>
+                <td>{{ subscriber.username }}</td>
+            </tr>
+        </table>
+    </div>
+</div>

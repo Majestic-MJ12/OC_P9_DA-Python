@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="{% static 'reviews.css' %}"/>
+<h1 class="c_title">
+    Update your review
+    Create a review
+</h1>
+<div class="c_center global__width global__margin__bottom">
+    <p>You are posting in response to</p>
+    <div class="c_ticket__post already__reviewed">
+        <div class="c_ticket__post__content">
+            <div class="c_ticket__post__content__row">
+                <p>You have requested a review</p>
+                <p>{{ ticket.user.username }} has requested a review</p>
+                <p>{{ ticket.time_created | date:'H:i, d F Y' }}</p>
+            </div>
+            <p>Title: {{ticket.title}}</p>
+            <p>Description: {{ticket.description}}</p>
+            <img src="{{ ticket.image.url }}" class="c_ticket__image">
+        </div>
+    </div>
+    <form method="POST" enctype="multipart/form-data">
+        <div class="c_review__post">
+            <div class="c_vertical__display">
+                <p>Review</p>
+                <p>Title</p>
+                {{review_form.headline}}
+                <p>Rating</p>
+                {{review_form.rating}}
+                <p>Comment</p>
+                {{review_form.body}}
+                <div class="c_row__display">
+                    <a href="??????????????">
+                        <button type="button" class="c_button">Cancel</button>
+                    </a>
+                    <button type="submit" class="c_button">Send</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

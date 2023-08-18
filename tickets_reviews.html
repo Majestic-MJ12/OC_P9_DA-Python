@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="{% static 'reviews.css' %}"/>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('input[type="file"]').change(function (e) {
+            let c_fileName = e.target.files[0].name;
+            document.getElementById("id_selected_image").innerText = `Image selected: ${c_fileName}`
+        });
+    });
+</script>
+<h1 class="c_title">
+    Create a review
+</h1>
+<div class="c_center global__width global__margin__bottom">
+    <form method="POST" enctype="multipart/form-data">
+        <div class="c_ticket__post not__reviewed">
+            <div class="c_vertical__display">
+                <p>Book / Article</p>
+                <p>Title</p>
+                {{ticket_form.title}}
+                <p>Description</p>
+                {{ticket_form.description}}
+                <div class="c_row__display">
+                    <button type="button" class="c_button"
+                            onclick="document.getElementById('id_image').click()">
+                        Upload file
+                    </button>
+                    {{ticket_form.image}}
+                    <p id="id_selected_image">No image selected.</p>
+                </div>
+            </div>
+        </div>
+        <div class="c_review__post">
+            <div class="c_vertical__display">
+                <p>Review</p>
+                <p>Title</p>
+                {{review_form.headline}}
+                <p>Rating</p>
+                {{review_form.rating}}
+                <p>Comment</p>
+                {{review_form.body}}
+                <div class="c_row__display">
+                    <a href="?????????????????????">
+                        <button type="button" class="c_button">Cancel</button>
+                    </a>
+                    <button type="submit" class="c_button">Send</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

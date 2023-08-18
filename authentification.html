@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="{% static 'authentication.css' %}"/>
+
+<div class="c_row__display auth__global__margin">
+    <section id="id_sign-up" class="c_center global__width">
+        <h1 class="c_title">Sign up</h1>
+        <div class="c_vertical__display auth__item global__width">
+            <p>Sign up now</p>
+            <!--@formatter:off-->
+            <a href="{% url "sign_up" %}">
+            <!--@formatter:on-->
+            <button class="c_button">Sign in</button>
+            </a>
+        </div>
+    </section>
+
+    <section id="id_sign-in" class="c_center global__width">
+        <h1 class="c_title">Log in</h1>
+        <div class="c_vertical__display auth__item global__width">
+            <p>Log in now</p>
+            <form method="post" class="c_vertical__display">
+                {% csrf_token %}
+                <div class="c_field">
+                    <p>Username</p>
+                    {{form.username}}
+                </div>
+                <div class="c_field">
+                    <p>Password</p>
+                    {{form.password}}
+                </div>
+                <button type="submit" class="c_button">Log in</button>
+            </form>
+            {% if error_message is not None %}
+            <p class="c_error__message">{{ error_message }}</p>
+            {% endif %}
+        </div>
+    </section>
+
+</div>
