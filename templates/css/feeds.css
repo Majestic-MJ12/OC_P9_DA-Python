@@ -1,0 +1,15 @@
+.c_feed_title {
+    padding-bottom: 7px;
+}
+
+.c_buttons_fixed {
+    position: fixed;
+    top: 50px;
+    left:0;
+    width: 100%;
+    margin:0;
+    height: 59.25px;
+    z-index: 99999;
+    transition: 0.4s;
+    background: rgba(255, 255, 255, 0.96);
+}

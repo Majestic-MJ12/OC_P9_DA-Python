@@ -3,23 +3,23 @@
     Update your review
     Create a review
 </h1>
-<div class="c_center global__width global__margin__bottom">
+<div class="c_center global_width global_margin_bottom">
     <p>You are posting in response to</p>
-    <div class="c_ticket__post already__reviewed">
-        <div class="c_ticket__post__content">
-            <div class="c_ticket__post__content__row">
+    <div class="c_ticket_post already_reviewed">
+        <div class="c_ticket_post_content">
+            <div class="c_ticket_post_content_row">
                 <p>You have requested a review</p>
                 <p>{{ ticket.user.username }} has requested a review</p>
                 <p>{{ ticket.time_created | date:'H:i, d F Y' }}</p>
             </div>
             <p>Title: {{ticket.title}}</p>
             <p>Description: {{ticket.description}}</p>
-            <img src="{{ ticket.image.url }}" class="c_ticket__image">
+            <img src="{{ ticket.image.url }}" class="c_ticket_image">
         </div>
     </div>
     <form method="POST" enctype="multipart/form-data">
-        <div class="c_review__post">
-            <div class="c_vertical__display">
+        <div class="c_review_post">
+            <div class="c_vertical_display">
                 <p>Review</p>
                 <p>Title</p>
                 {{review_form.headline}}
@@ -27,7 +27,7 @@
                 {{review_form.rating}}
                 <p>Comment</p>
                 {{review_form.body}}
-                <div class="c_row__display">
+                <div class="c_row_display">
                     <a href="??????????????">
                         <button type="button" class="c_button">Cancel</button>
                     </a>

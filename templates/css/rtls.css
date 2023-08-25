@@ -1,0 +1,225 @@
+th {
+    text-align: right;
+}
+
+.c_module h2, .c_module caption {
+    text-align: right;
+}
+
+.c_module ul, .c_module ol {
+    margin-left: 0;
+    margin-right: 1.5em;
+}
+
+.c_viewlink, .c_addlink, .c_changelink {
+    padding-left: 0;
+    padding-right: 16px;
+    background-position: 100% 1px;
+}
+
+.c_deletelink {
+    padding-left: 0;
+    padding-right: 16px;
+    background-position: 100% 1px;
+}
+
+.c_object_tools {
+    float: left;
+}
+
+thead th:first-child,
+tfoot td:first-child {
+    border-left: none;
+}
+
+/* LAYOUT */
+
+#id_user_tools {
+    right: auto;
+    left: 0;
+    text-align: left;
+}
+
+div.breadcrumbs {
+    text-align: right;
+}
+
+#id_content_main {
+    float: right;
+}
+
+#id_content_related {
+    float: left;
+    margin-left: -300px;
+    margin-right: auto;
+}
+
+.c_colms {
+    margin-left: 300px;
+    margin-right: 0;
+}
+
+table thead th.sorted .c_sortoptions {
+   float: left;
+}
+
+thead th.c_sorted .c_text {
+    padding-right: 0;
+    padding-left: 42px;
+}
+
+.c_dashboard .c_module table td a {
+    padding-left: .6em;
+    padding-right: 16px;
+}
+
+.c_change_list .c_filtered table {
+    border-left: none;
+    border-right: 0px none;
+}
+
+#id_changelist-filter {
+    border-left: none;
+    border-right: none;
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+#id_changelist_filter li.c_selected {
+    border-left: none;
+    padding-left: 10px;
+    margin-left: 0;
+    border-right: 5px solid var(--hairline-color);
+    padding-right: 10px;
+    margin-right: -15px;
+}
+
+#id_changelist table tbody td:first-child, #id_changelist table tbody th:first-child {
+    border-right: none;
+    border-left: none;
+}
+
+.c_aligned label {
+    padding: 0 0 3px 1em;
+    float: right;
+}
+
+.c_submit_row {
+    text-align: left
+}
+
+.c_submit_row p.c_deletelink_box {
+    float: right;
+}
+
+.c_submit_row input.c_default {
+    margin-left: 0;
+}
+
+.c_vDateField, .c_vTimeField {
+    margin-left: 2px;
+}
+
+.c_aligned .c_form_row input {
+    margin-left: 5px;
+}
+
+form .c_aligned p.c_help, form .c_aligned div.c_help {
+    clear: right;
+}
+
+form .c_aligned ul {
+    margin-right: 163px;
+    margin-left: 0;
+}
+
+form ul.c_inline li {
+    float: right;
+    padding-right: 0;
+    padding-left: 7px;
+}
+
+input[type=submit].c_default, .c_submit-row input.c_default {
+    float: left;
+}
+
+fieldset .c_fieldBox {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.c_errorlist li {
+    background-position: 100% 12px;
+    padding: 0;
+}
+
+.c_errornote {
+    background-position: 100% 12px;
+    padding: 10px 12px;
+}
+
+.c_calendarnav-previous {
+    top: 0;
+    left: auto;
+    right: 10px;
+    background: url(../img/calendar-icons.svg) 0 -30px no-repeat;
+}
+
+.c_calendarbox .c_calendarnav_previous:focus,
+.c_calendarbox .c_calendarnav_previous:hover {
+    background-position: 0 -45px;
+}
+
+.c_calendarnav_next {
+    top: 0;
+    right: auto;
+    left: 10px;
+    background: url(../img/calendar-icons.svg) 0 0 no-repeat;
+}
+
+.c_calendarbox .c_calendarnav_next:focus,
+.c_calendarbox .c_calendarnav_next:hover {
+    background-position: 0 -15px;
+}
+
+.c_calendar caption, .c_calendarbox h2 {
+    text-align: center;
+}
+
+.c_selector {
+    float: right;
+}
+
+.c_selector .c_selector_filter {
+    text-align: right;
+}
+
+.c_inline_deletelink {
+    float: left;
+}
+
+form .c_form_row p.c_datetime {
+    overflow: hidden;
+}
+
+.c_related_widget_wrapper {
+    float: right;
+}
+
+.c_inline_related h2, .c_inline_group h2 {
+    text-align: right
+}
+
+.c_inline_related h3 span.c_delete {
+    padding-right: 20px;
+    padding-left: inherit;
+    left: 10px;
+    right: inherit;
+    float:left;
+}
+
+.c_inline_related h3 span.c_delete label {
+    margin-left: inherit;
+    margin-right: 2px;
+}

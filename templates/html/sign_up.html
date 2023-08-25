@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="{% static 'authentication.css' %}"/>
 <h1 class="c_title">Sign up</h1>
 <div class="c_center">
-    <form method="POST" class="c_vertical__display auth__item global__width">
+    <form method="POST" class="c_vertical_display auth_item global_width">
         <div class="c_field">
             <p>Username</p>
             {{form.username}}
@@ -14,12 +14,12 @@
             <p>Confirm your password</p>
             {{form.password2}}
         </div>
-        <div class="c_row__display">
+        <div class="c_row_display">
             <a href="{% url "authentication" %}">
             <button type="button" class="c_button">Back</button>
             </a>
             <button type="submit" class="c_button">Sign up</button>
         </div>
     </form>
-    <p class="c_error__message">{{ error_message }}</p>
+    <p class="c_error_message">{{ error_message }}</p>
 </div>

@@ -1,16 +1,16 @@
 <link rel="stylesheet" href="{% static 'posts.css' %}"/>
 <h1 class="c_title">Your posts</h1>
-<div class="c_center global__width">
-    <div class="c_ticket__post not__reviewed">
-        <div class="c_ticket__post already__reviewed">
-            <div class="c_ticket__post__content">
-                <div class="c_ticket__post__content__row">
+<div class="c_center global_width">
+    <div class="c_ticket_post not__reviewed">
+        <div class="c_ticket_post already_reviewed">
+            <div class="c_ticket_post__content">
+                <div class="c_ticket_post_content_row">
                     <p>You have requested a review</p>
                     <p>{{ post.user.username }} has requested a review</p>
                     <p>{{ post.time_created | date:'H:i, d F Y' }}</p>
                 </div>
                 <p>Title: {{ post.title }}</p>
-                <div class="c_ticket__post__content__row">
+                <div class="c_ticket_post_content_row">
                     <p></p>
                     <div>
                         <a href="{% url "edit_tickets" post.id %}">
@@ -22,29 +22,29 @@
             </div>
         </div>
     </div>
-    <div class="c_review__post">
-        <div class="c_review__post__content">
-            <div class="c_review__post__content__row">
+    <div class="c_review_post">
+        <div class="c_review_post_content">
+            <div class="c_review_post_content_row">
                 <p>You have published a review</p>
                 <p>{{ post.user.username }} has published a review</p>
                 <p>{{ post.time_created | date:'H:i, d F Y' }}</p>
             </div>
-            <div class="c_review__rating">
+            <div class="c_review_rating">
                 <p>{{ post.headline }} -</p>
-                <p class="c_rating__off">{{ rating_char_off }}</p>
-                <p class="c_rating__on">{{ rating_char_on }}</p>
+                <p class="c_rating_off">{{ rating_char_off }}</p>
+                <p class="c_rating_on">{{ rating_char_on }}</p>
             </div>
             <p>Comment: {{ post.body }}</p>
-            <div class="c_ticket__in__review">
-                <div class="c_ticket__post__content">
+            <div class="c_ticket_in_review">
+                <div class="c_ticket_post_content">
                     <p>Ticket - You</p>
                     <p>Ticket: {{ post.ticket.user }}</p>
                     <p>Title: {{ post.ticket.title }}</p>
                     <img src="{{ post.ticket.image.url }}"
-                         class="c_ticket__image">
+                         class="c_ticket_image">
                 </div>
             </div>
-            <div class="c_review__post__content__row">
+            <div class="c_review_post_content_row">
                 <p></p>
                 <div>
                     <a href="{% url "edit_reviews" post.id %}">
