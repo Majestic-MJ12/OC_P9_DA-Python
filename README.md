@@ -59,7 +59,8 @@ Launch the Django server:
 python manage.py runserver
 ```
 
-In your preferred browser, go to ```
+In your preferred browser, go to 
+```
 http://127.0.0.1:8000/
 ```
 
@@ -68,7 +69,7 @@ http://127.0.0.1:8000/
 Django administration
 Username: Admin | Password: 
 
-→ ```
+```
 http://127.0.0.1:8000/admin/
 ```
 
