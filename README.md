@@ -9,7 +9,7 @@ git clone https://github.com/Majestic-MJ12/OC_P9_DA-Python.git
 
 ## Project Initialization
 
-###Windows:
+### Windows:
 
 In Windows Powershell, navigate to the desired folder:
 
@@ -20,23 +20,23 @@ In Windows Powershell, navigate to the desired folder:
 '''env\Scripts\activate'''
 '''python -m venv env'''
 
-###MacOS and Linux:
+### MacOS and Linux:
 
 In the terminal, navigate to the desired folder.
 
 '''cd '''
 
-####Activate the virtual environment
+#### Activate the virtual environment
 
 '''python3 -m venv env'''
 '''source env/bin/activate'''
 
 
-####Install required packages
+#### Install required packages
 
 '''pip install -r requirements.txt'''
 
-##Usage
+## Usage
 
 Launch the Django server:
 
@@ -44,16 +44,16 @@ Launch the Django server:
 
 In your preferred browser, go to '''http://127.0.0.1:8000/'''
 
-##Information
+## Information
 
 Django administration
 Username: Admin | Password: 
 
 → '''http://127.0.0.1:8000/admin/'''
 
-##List of existing users
+## List of existing users
 
-##Features
+## Features
 
 Login and registration;
 View and modify user profile, add a profile picture;
@@ -64,4 +64,4 @@ View, edit, or delete one's own posts;
 Follow other users or unsubscribe.
 
 
-#Project not fonctionnal !!!
+# Project not fonctionnal !!!
