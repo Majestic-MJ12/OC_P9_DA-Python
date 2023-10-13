@@ -28,6 +28,12 @@ env\Scripts\activate
 python -m venv env
 ```
 
+#### Install required packages
+
+```
+pip install -r requirements.txt
+```
+
 ### MacOS and Linux:
 
 In the terminal, navigate to the desired folder.
