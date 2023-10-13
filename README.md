@@ -5,7 +5,9 @@ Tested on Windows 10 - Python 3.11
 
 ## Project retrieval
 
+'''
 git clone https://github.com/Majestic-MJ12/OC_P9_DA-Python.git
+'''
 
 ## Project Initialization
 
@@ -13,43 +15,63 @@ git clone https://github.com/Majestic-MJ12/OC_P9_DA-Python.git
 
 In Windows Powershell, navigate to the desired folder:
 
-'''cd'''
+'''
+cd
+'''
 
 #### Activate the virtual environment
 
-'''env\Scripts\activate'''
-'''python -m venv env'''
+'''
+env\Scripts\activate
+'''
+'''
+python -m venv env
+'''
 
 ### MacOS and Linux:
 
 In the terminal, navigate to the desired folder.
 
-'''cd '''
+'''
+cd
+'''
 
 #### Activate the virtual environment
 
-'''python3 -m venv env'''
-'''source env/bin/activate'''
+'''
+python3 -m venv env
+'''
+'''
+source env/bin/activate
+'''
 
 
 #### Install required packages
 
-'''pip install -r requirements.txt'''
+'''
+pip install -r requirements.txt
+'''
 
 ## Usage
 
 Launch the Django server:
 
-'''python manage.py runserver'''
+'''
+python manage.py runserver
+'''
 
-In your preferred browser, go to '''http://127.0.0.1:8000/'''
+In your preferred browser, go to '''
+http://127.0.0.1:8000/
+'''
 
 ## Information
 
 Django administration
 Username: Admin | Password: 
 
-→ '''http://127.0.0.1:8000/admin/'''
+→ '''
+http://127.0.0.1:8000/admin/
+'''
 
 ## List of existing users
 
