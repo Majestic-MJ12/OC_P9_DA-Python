@@ -92,4 +92,4 @@ View, edit, or delete one's own posts;
 Follow other users or unsubscribe.
 
 
-# Project not fonctionnal !!!
+# Project not functional !!!
