@@ -91,5 +91,9 @@ Create reviews, in response to tickets or independently;
 View, edit, or delete one's own posts;
 Follow other users or unsubscribe.
 
+## LICENCE
+
+GNU AFFERO GENERAL PUBLIC LICENSE
+
 
 # Project not functional !!!
