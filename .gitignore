@@ -4,5 +4,9 @@ __pycache__/
 venv/
 # ignore ".idea" pycharm folder
 .idea/
+# ignore ".vs" visual studio folder
+.vs/
+# ignore ".idea" visual studio code folder
+.vscode/
 # ignore "test" folder
 test/
